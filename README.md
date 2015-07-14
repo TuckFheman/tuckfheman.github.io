@@ -1,1 +1,1 @@
-# tuckfheman.github.io
+<meta http-equiv="refresh" content="0; URL='bts:tuckfheman-com/transfer/asset/BROWNIE.PTS/memo/Tip%20for%20...'">
