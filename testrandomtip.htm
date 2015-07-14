@@ -14,6 +14,7 @@ Keep this notice intact please
 function random_account(){
 var myaccounts = new Array()
 var myassets = new Array()
+var myWin
 
 //specify random accounts below. You can have as many as you wish
 myaccounts[1]="beyondbitcoin"
@@ -64,7 +65,8 @@ var rz=Math.floor(Math.random()*myassets.length)
 if (rz==0)
 rz=1
 
-window.open('bts:'+myaccounts[ry]+'/transfer/asset/'+myassets[rz]+'/memo/Random%20Tip%20Generator')
+window.open('bts:'+myaccounts[ry]+'/transfer/asset/'+myassets[rz]+'/memo/Random%20Tip%20Generator', 'myWin')
+myWin.close()
 }
 random_account()
 //-->
