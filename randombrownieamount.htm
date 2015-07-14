@@ -54,7 +54,15 @@ ry=1
 
 var ra=Math.floor((Math.random() * 100) + 1)
 
-window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!')
+var myWindow;
+
+function openWin() {
+    myWindow = window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
+}
+
+function closeWin() {
+    myWindow.close();
+}
 
 }
 random_account()
