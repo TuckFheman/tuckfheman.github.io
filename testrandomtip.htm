@@ -13,9 +13,9 @@ Keep this notice intact please
 
 function random_account(){
 var myaccounts = new Array()
-var myWin
+var myassets = new Array()
 
-//specify random images below. You can have as many as you wish
+//specify random accounts below. You can have as many as you wish
 myaccounts[1]="beyondbitcoin"
 myaccounts[2]="tuckfheman-com"
 myaccounts[3]="bytemaster"
@@ -49,12 +49,22 @@ myaccounts[30]="del0.cass"
 myaccounts[31]="xeroc"
 myaccounts[32]="monsterer"
 
-
 var ry=Math.floor(Math.random()*myaccounts.length)
 if (ry==0)
 ry=1
-window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/5/memo/Random%20Tip%20Generator', 'myWin')
-myWin.close()
+
+//specify random assets below. You can have as many as you wish
+myassets[1]="BTS"
+myassets[2]="GOLD"
+myassets[3]="USD"
+myassets[4]="SILVER"
+myassets[5]="BROWNIE.PTS"
+
+var rz=Math.floor(Math.random()*myassets.length)
+if (rz==0)
+rz=1
+
+window.open('bts:'+myaccounts[ry]+'/transfer/asset/'+myassets[rz]+'/memo/Random%20Tip%20Generator')
 }
 random_account()
 //-->
