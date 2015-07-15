@@ -4,17 +4,14 @@
 
 <script language="JavaScript">
 <!--
-
 /*
 Random Image Script- By JavaScript Kit (http://www.javascriptkit.com) 
 Over 400+ free JavaScripts here!
 Keep this notice intact please
 */
-
 function random_account(){
 var myaccounts = new Array()
-
-//specify random accounts below. You can have as many as you wish
+//specify random images below. You can have as many as you wish
 myaccounts[1]="beyondbitcoin"
 myaccounts[2]="tuckfheman-com"
 myaccounts[3]="bytemaster"
@@ -47,14 +44,14 @@ myaccounts[29]="buckfankers"
 myaccounts[30]="del0.cass"
 myaccounts[31]="xeroc"
 myaccounts[32]="monsterer"
-
+myaccounts[33]="ander"
+myaccounts[34]="permie"
+myaccounts[35]="turkeyleg"
 var ry=Math.floor(Math.random()*myaccounts.length)
 if (ry==0)
 ry=1
 
-var ra=Math.floor((Math.random() * 500) + 1)
-
-window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Test%20Random%20Tip%20Amount%20-%20Lucky%20You!')
+window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/5/memo/Random%20Tip%20Generator%20-%20Lucky%20You!');
 }
 random_account()
 //-->
