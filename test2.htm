@@ -12,7 +12,7 @@ Keep this notice intact please
 */
 
 function random_account(){
-var myaccounts = new Array();
+var myaccounts = new Array()
 
 //specify random accounts below. You can have as many as you wish
 myaccounts[1]="beyondbitcoin"
@@ -54,16 +54,18 @@ myaccounts[36]="emailtooaj"
 myaccounts[37]="testz"
 myaccounts[38]="frodo"
 
-var ry=Math.floor(Math.random()*myaccounts.length);
-if (ry==0);
+var ry=Math.floor(Math.random()*myaccounts.length)
+if (ry==0)
 ry=1
 
-var ra=Math.floor((Math.random() * 100) + 1);
+var ra=Math.floor((Math.random() * 100) + 1)
 
-window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
+window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!')
+document.writeln('Winner: '+myaccounts[ry]);
+document.writeln('Amount: '+ra);
 
 }
-random_account();
+random_account()
 //-->
 </script>
 </body>
