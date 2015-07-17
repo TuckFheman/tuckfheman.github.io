@@ -55,8 +55,44 @@ if (ry==0)
 ry=1
 var ra=Math.floor((Math.random() * 100) + 1)
 window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!')
-setTimeout(function() {window.close());},3000);
 document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra);
+
+
+<!--
+
+function random_imglink(){
+var myimages=new Array()
+//specify random images below. You can have as many as you wish
+myimages[1]="http://media.giphy.com/media/A4N9BELRdduoM/giphy.gif"
+myimages[2]="http://media.giphy.com/media/Vem3Cwdc9VLIk/giphy.gif"
+myimages[3]="http://media.giphy.com/media/zD26Xh2jJPBDy/giphy.gif"
+myimages[4]="http://media.giphy.com/media/11rzSgk8irQwE0/giphy.gif"
+myimages[5]="http://media.giphy.com/media/itDBteCsTFSVO/giphy.gif"
+myimages[6]="http://media.giphy.com/media/102VfCWF40oAuI/giphy.gif"
+myimages[7]="http://media.giphy.com/media/dBWNLwEN4SHkc/giphy.gif"
+myimages[8]="http://media.giphy.com/media/10qd1dszWyPO4U/giphy.gif"
+myimages[9]="http://media.giphy.com/media/O9zloGTTajAY0/giphy.gif"
+myimages[10]="http://media3.giphy.com/media/ppHVQrkpzSYpy/giphy.gif"
+myimages[11]="http://media2.giphy.com/media/WdxAL8nmOCQ5a/giphy.gif"
+myimages[12]="http://media3.giphy.com/media/1zN2433DxGL4I/giphy.gif"
+myimages[13]="http://media1.giphy.com/media/YTbZzCkRQCEJa/giphy.gif"
+myimages[14]="http://media.giphy.com/media/11Qag6B0KFvUbu/giphy.gif"
+myimages[15]="http://media.giphy.com/media/l41m1mh2nyvm5Lk3u/giphy.gif"
+myimages[16]="http://media.giphy.com/media/kQg7fQMvVD5Ha/giphy.gif"
+myimages[17]="http://media.giphy.com/media/hryZ5xPHpPAQ/giphy.gif"
+myimages[18]="http://media.giphy.com/media/TsD8LGhM5jgs0/giphy.gif"
+myimages[19]="http://media.giphy.com/media/UkhHIZ37IDRGo/giphy.gif"
+myimages[20]="http://media.giphy.com/media/xeXEpUVvAxCV2/giphy.gif"
+
+var ry=Math.floor(Math.random()*myimages.length)
+if (ry==0)
+ry=1
+document.write('<a class="logo_link trigger" href="/"><img src="'+myimages[ry]+'" border=0 alt="{Title}"></a>')
+}
+random_imglink()
+//-->
+
+
 }
 random_account()
 //-->
