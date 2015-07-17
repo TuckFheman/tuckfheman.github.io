@@ -58,6 +58,7 @@ var ra=Math.floor((Math.random() * 100) + 1)
 
 function openWin() {
     myWindow = window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');   // Opens a new window
+    document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+'<br><br>'); // writes the winner and amount on page
 }
 
 function closeWin() {
@@ -65,11 +66,7 @@ function closeWin() {
        // Closes the new window
 }
 
-openWin();
-document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+'<br><br>');
-closeWin();
 
-<!--
 
 function random_imglink(){
 var myimages=new Array()
@@ -101,9 +98,9 @@ ry=1
 document.write('<a class="logo_link trigger" href="/"><img src="'+myimages[ry]+'" border=0 alt="{Title}"></a>')
 }
 random_imglink()
-//-->
 
-
+openWin()
+closeWin()
 }
 random_account()
 //-->
