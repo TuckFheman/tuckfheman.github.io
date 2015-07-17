@@ -55,13 +55,24 @@ if (ry==0)
 ry=1
 var ra=Math.floor((Math.random() * 100) + 1)
 
-function nukeWin() {
-w = window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
-setTimeout(w = window.close(), 4000);
 
-}
+function openWin1() {
 
-nukeWin()
+  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
+
+  var myVar = setTimeout(function(){closeWin()},4000);
+
+  function closeWin()        {
+
+  myWindow.close();
+
+ clearTimeout(myVar);
+
+  };             
+
+};
+
+openWin()
 document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+'<br><br>'); // writes the winner and amount on page
 
 
