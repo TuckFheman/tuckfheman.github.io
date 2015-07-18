@@ -60,7 +60,7 @@ ry=1
 var ra=Math.floor((Math.random() * 100) + 1)
 
 function openWin1() {
-  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BROWNIE.PTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
+  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
   var myVar = setTimeout(function(){closeWin()},2000);
   function closeWin()        {
   myWindow.close();
@@ -69,7 +69,7 @@ function openWin1() {
 };
 openWin1()
 
-document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+'<br><br>'); // writes the winner and amount on page
+document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+' BTS<br><br>'); // writes the winner and amount on page
 
 function random_imglink(){
 var myimages=new Array()
