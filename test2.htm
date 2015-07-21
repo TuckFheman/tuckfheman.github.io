@@ -59,7 +59,7 @@ if (ry==0)
 ry=1
 var ra=Math.floor((Math.random() * 100) + 1)
 function openWin1() {
-  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BTS/from/varukasaltz/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
+  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
   var myVar = setTimeout(function(){closeWin()},2000);
   function closeWin()        {
   myWindow.close();
