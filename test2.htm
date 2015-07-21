@@ -55,24 +55,13 @@ myaccounts[40]="frozenfan"
 myaccounts[41]="kencode"
 myaccounts[42]="ebit"
 var ry=Math.floor(Math.random()*myaccounts.length)
+
+// random amount
 if (ry==0)
 ry=1
-
 var ra=Math.floor(Math.sqrt(Math.random() * 100^2));
 
-var arr = []
-while(arr.length < 8){
-  var randomnumber=Math.ceil(Math.random()*100)
-  var found=false;
-  for(var i=0;i<arr.length;i++){
-	if(arr[i]==randomnumber){found=true;break}
-  }
-  if(!found)arr[arr.length]=randomnumber;
-}
-
-
-
-
+// open bitshares client and input account and amount
 function openWin1() {
   myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
   var myVar = setTimeout(function(){closeWin()},1000);
@@ -82,9 +71,11 @@ function openWin1() {
   };             
 };
 openWin1()
+// write winner to screen
 document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+' BTS<br><br>'); // writes the winner and amount on page
 
 
+// display random image
 function random_imglink(){
 var myimages=new Array()
 //specify random images below. You can have as many as you wish
@@ -115,6 +106,7 @@ document.write('<a class="logo_link trigger" href="/"><img width="500" src="'+my
 }
 random_imglink()
 }
+
 random_account()
 //-->
 </script>
