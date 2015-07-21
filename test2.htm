@@ -58,7 +58,7 @@ var ry=Math.floor(Math.random()*myaccounts.length)
 if (ry==0)
 ry=1
 
-var ra=Math.floor(Math.sqrt(Math.random() * 100^2) + 1);
+var ra=Math.floor(Math.sqrt(Math.random() * 100^2));
 
 var arr = []
 while(arr.length < 8){
@@ -71,8 +71,10 @@ while(arr.length < 8){
 }
 
 
+
+
 function openWin1() {
-  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BTS/amount/'+ra+'/from/buckfankers/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
+  myWindow=window.open('bts:'+myaccounts[ry]+'/transfer/asset/BTS/amount/'+ra+'/memo/Random%20Tip%20Amount%20-%20Lucky%20You!');
   var myVar = setTimeout(function(){closeWin()},1000);
   function closeWin()        {
   myWindow.close();
@@ -81,7 +83,7 @@ function openWin1() {
 };
 openWin1()
 document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+' BTS<br><br>'); // writes the winner and amount on page
-document.write(arr);
+
 
 function random_imglink(){
 var myimages=new Array()
