@@ -69,12 +69,7 @@ ry=1
 var ra=Math.floor((Math.random() * 25) + 1)
 function openWin1() {
   myWindow=window.open('https://bitshares.openledger.info/#/transfer?from=&to='+myaccounts[ry]+'&asset=BTS&amount='+ra+'&memo=Random%20Tip%20Amount%20-%20Lucky%20You!');
-  var myVar = setTimeout(function(){closeWin()},2000);
-  function closeWin()        {
-  myWindow.close();
- clearTimeout(myVar);
-  };             
-};
+  };
 openWin1()
 document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+' BTS<br><br>'); // writes the winner and amount on page
 function random_imglink(){
