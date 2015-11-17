@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script language="JavaScript">
+<!--
+/*
+Random Image Script- By JavaScript Kit (http://www.javascriptkit.com) 
+Over 400+ free JavaScripts here!
+Keep this notice intact please
+*/
+function random_account(){
+var myaccounts = new Array()
+//specify random accounts below. You can have as many as you wish
+myaccounts[1]="beyondbitcoin"
+myaccounts[2]="tuckfheman-com"
+myaccounts[3]="bytemaster"
+myaccounts[4]="riverhead"
+myaccounts[5]="cryptoprometheus"
+myaccounts[6]="roadscape"
+myaccounts[7]="stan"
+myaccounts[8]="hadrian"
+myaccounts[9]="onceuponatime"
+myaccounts[10]="methodx"
+myaccounts[11]="claude-homml"
+myaccounts[12]="pheonike"
+myaccounts[13]="vor0220"
+myaccounts[14]="pollux"
+myaccounts[15]="fav"
+myaccounts[16]="manutd"
+myaccounts[17]="octane"
+myaccounts[18]="lafona"
+myaccounts[19]="slim180"
+myaccounts[20]="bobmaloney"
+myaccounts[21]="jabbajabba"
+myaccounts[22]="shentist"
+myaccounts[23]="troglodactyl"
+myaccounts[24]="robrigo"
+myaccounts[25]="davidpbrown"
+myaccounts[26]="evan"
+myaccounts[27]="chuckone"
+myaccounts[28]="jfw"
+myaccounts[29]="buckfankers"
+myaccounts[30]="del0.cass"
+myaccounts[31]="xeroc"
+myaccounts[32]="monsterer"
+myaccounts[33]="ander"
+myaccounts[34]="krimduss"
+myaccounts[35]="turkeyleg"
+myaccounts[36]="emailtooaj"
+myaccounts[37]="testz"
+myaccounts[38]="frodo"
+myaccounts[39]="mangou007"
+myaccounts[40]="frozenfan"
+myaccounts[41]="kencode"
+myaccounts[42]="ebit"
+myaccounts[43]="yourship"
+myaccounts[44]="tora62"
+myaccounts[45]="dev.sidhujag"
+myaccounts[46]="thirty-eight.pts-warrior"
+myaccounts[47]="ihashfury"
+myaccounts[48]="mf-tzo"
+myaccounts[49]="liondani"
+myaccounts[50]="calabiyau"
+myaccounts[51]="lakerta06"
+var ry=Math.floor(Math.random()*myaccounts.length)
+if (ry==0)
+ry=1
+var ra=Math.floor((Math.random() * 25) + 1)
+function openWin1() {
+  myWindow=window.open('https://bitshares.openledger.info/#/transfer?from=&to='+myaccounts[ry]+'&asset=BTS&amount='+ra+'&memo=Random%20Tip%20Amount%20-%20Lucky%20You!');
+  var myVar = setTimeout(function(){closeWin()},2000);
+  function closeWin()        {
+  myWindow.close();
+ clearTimeout(myVar);
+  };             
+};
+openWin1()
+document.write('Winner: '+myaccounts[ry]+'<br>Amount: '+ra+' BTS<br><br>'); // writes the winner and amount on page
+function random_imglink(){
+var myimages=new Array()
+//specify random images below. You can have as many as you wish
+myimages[1]="http://media.giphy.com/media/A4N9BELRdduoM/giphy.gif"
+myimages[2]="http://media.giphy.com/media/Vem3Cwdc9VLIk/giphy.gif"
+myimages[3]="http://media.giphy.com/media/zD26Xh2jJPBDy/giphy.gif"
+myimages[4]="http://media.giphy.com/media/11rzSgk8irQwE0/giphy.gif"
+myimages[5]="http://media.giphy.com/media/itDBteCsTFSVO/giphy.gif"
+myimages[6]="http://media.giphy.com/media/102VfCWF40oAuI/giphy.gif"
+myimages[7]="http://media.giphy.com/media/dBWNLwEN4SHkc/giphy.gif"
+myimages[8]="http://media.giphy.com/media/10qd1dszWyPO4U/giphy.gif"
+myimages[9]="http://media.giphy.com/media/O9zloGTTajAY0/giphy.gif"
+myimages[10]="http://media3.giphy.com/media/ppHVQrkpzSYpy/giphy.gif"
+myimages[11]="http://media2.giphy.com/media/WdxAL8nmOCQ5a/giphy.gif"
+myimages[12]="http://media3.giphy.com/media/1zN2433DxGL4I/giphy.gif"
+myimages[13]="http://media1.giphy.com/media/YTbZzCkRQCEJa/giphy.gif"
+myimages[14]="http://media.giphy.com/media/11Qag6B0KFvUbu/giphy.gif"
+myimages[15]="http://media.giphy.com/media/l41m1mh2nyvm5Lk3u/giphy.gif"
+myimages[16]="http://media.giphy.com/media/kQg7fQMvVD5Ha/giphy.gif"
+myimages[17]="http://media.giphy.com/media/hryZ5xPHpPAQ/giphy.gif"
+myimages[18]="http://media.giphy.com/media/TsD8LGhM5jgs0/giphy.gif"
+myimages[19]="http://media.giphy.com/media/UkhHIZ37IDRGo/giphy.gif"
+myimages[20]="http://media.giphy.com/media/xeXEpUVvAxCV2/giphy.gif"
+var ry=Math.floor(Math.random()*myimages.length)
+if (ry==0)
+ry=1
+document.write('<a class="logo_link trigger" href="/"><img width="500" src="'+myimages[ry]+'" border=0 alt="{Title}"></a>')
+}
+random_imglink()
+}
+random_account()
+//-->
+</script>
+</body>
+</html>
